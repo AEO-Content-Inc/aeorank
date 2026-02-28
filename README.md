@@ -6,6 +6,10 @@ Score any website for AI engine visibility across 23 criteria. Pure HTTP + regex
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js CI](https://github.com/AEO-Content-Inc/aeorank/actions/workflows/ci.yml/badge.svg)](https://github.com/AEO-Content-Inc/aeorank/actions/workflows/ci.yml)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AEO-Content-Inc/aeorank/main/demo.gif" alt="aeorank demo" width="700">
+</p>
+
 ## Quick Start
 
 ### CLI
@@ -79,9 +83,21 @@ Options:
 
 ## GitHub Actions
 
+Use the built-in action to gate deployments on AEO score:
+
 ```yaml
 - name: AEO Audit
-  run: npx aeorank ${{ env.SITE_URL }} --ci --threshold 70
+  uses: AEO-Content-Inc/aeorank@v1
+  with:
+    domain: example.com
+    threshold: 70
+```
+
+Or use `npx` directly:
+
+```yaml
+- name: AEO Audit
+  run: npx aeorank example.com --ci --threshold 70
 ```
 
 ## API

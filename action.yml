@@ -1,0 +1,61 @@
+name: 'AEORank Audit'
+description: 'Score any website for AI engine visibility across 23 criteria'
+branding:
+  icon: 'bar-chart-2'
+  color: 'green'
+
+inputs:
+  domain:
+    description: 'Domain to audit (e.g. example.com)'
+    required: true
+  threshold:
+    description: 'Minimum score to pass (0-100). Fails the step if score is below.'
+    required: false
+    default: '0'
+  args:
+    description: 'Additional CLI arguments (e.g. --no-headless --no-multi-page)'
+    required: false
+    default: ''
+
+outputs:
+  score:
+    description: 'Overall AEO score (0-100)'
+    value: ${{ steps.audit.outputs.score }}
+  json:
+    description: 'Full audit result as JSON'
+    value: ${{ steps.audit.outputs.json }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Run AEORank audit
+      id: audit
+      shell: bash
+      run: |
+        # Install and run aeorank
+        npm install -g aeorank@latest 2>/dev/null
+
+        # Run audit, capture JSON output
+        RESULT=$(aeorank "${{ inputs.domain }}" --json ${{ inputs.args }} 2>/dev/null)
+
+        # Extract score
+        SCORE=$(echo "$RESULT" | node -e "process.stdin.on('data',d=>{const j=JSON.parse(d);console.log(j.overallScore)})")
+
+        echo "score=$SCORE" >> "$GITHUB_OUTPUT"
+        echo "json<<AEORANK_EOF" >> "$GITHUB_OUTPUT"
+        echo "$RESULT" >> "$GITHUB_OUTPUT"
+        echo "AEORANK_EOF" >> "$GITHUB_OUTPUT"
+
+        echo "::notice::AEORank score for ${{ inputs.domain }}: $SCORE/100"
+
+        # Check threshold
+        THRESHOLD=${{ inputs.threshold }}
+        if [ "$THRESHOLD" -gt 0 ] && [ "$SCORE" -lt "$THRESHOLD" ]; then
+          echo "::error::AEORank score $SCORE is below threshold $THRESHOLD"
+          exit 1
+        fi
