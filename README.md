@@ -220,25 +220,28 @@ console.log(result.comparison.tied);              // Criteria with equal scores
 
 ## Benchmark Dataset
 
-The `data/` directory contains open benchmark data from 500+ audited domains:
+The `data/` directory contains the largest open dataset of AI visibility scores - **11,068 domains** scored across 23 criteria, including **4,313 Y Combinator startups** across 48 batches (W06-W26):
 
-| File | Description |
-|------|-------------|
-| [`data/benchmark.json`](data/benchmark.json) | All domains with per-criterion scores, sector/category |
-| [`data/yc.json`](data/yc.json) | YC startups with company metadata |
-| [`data/sectors.json`](data/sectors.json) | Pre-computed sector statistics |
+| File | Contents |
+|------|----------|
+| [`data/benchmark.json`](data/benchmark.json) | **11,068 domains** with per-criterion scores and sector/category |
+| [`data/yc.json`](data/yc.json) | **4,313 Y Combinator startups** with company name, one-liner, founders, industry tags |
+| [`data/sectors.json`](data/sectors.json) | **66 sectors** with pre-computed statistics (mean, median, p25, p75) |
 
 Use the dataset for research, benchmarking, or building on top of AEORank:
 
 ```ts
-import benchmark from './data/benchmark.json' assert { type: 'json' };
+import yc from './data/yc.json' assert { type: 'json' };
 
-// Find domains scoring above 80
-const topDomains = benchmark.entries.filter(e => e.score >= 80);
+// Find top-scoring YC startups
+const top = yc.entries.filter(e => e.score >= 80);
+
+// Filter by batch
+const w25 = yc.entries.filter(e => e.batch === 'w25');
 
 // Get sector averages
 import sectors from './data/sectors.json' assert { type: 'json' };
-console.log(sectors.sectors.healthcare.mean); // Average score for healthcare
+console.log(sectors.sectors.healthcare.mean);
 ```
 
 ## Contributing
