@@ -89,3 +89,12 @@ export type {
 
 export { detectParkedDomain } from './parked-domain.js';
 export type { ParkedDomainResult } from './parked-domain.js';
+
+// ─── HTML reports ────────────────────────────────────────────────────────────
+
+export { generateHtmlReport, generateComparisonHtmlReport } from './html-report.js';
+
+// ─── Comparison ──────────────────────────────────────────────────────────────
+
+export { compare } from './compare.js';
+export type { ComparisonResult, CriterionComparison } from './compare.js';

@@ -1,0 +1,1006 @@
+{
+  "meta": {
+    "generated": "2026-03-01",
+    "totalDomains": 11068
+  },
+  "overall": {
+    "mean": 35,
+    "median": 35,
+    "p25": 23,
+    "p75": 48
+  },
+  "sectors": {
+    "ai-marketing": {
+      "name": "Ai Marketing",
+      "count": 2,
+      "mean": 78,
+      "median": 78,
+      "p25": 70,
+      "p75": 85,
+      "categories": {
+        "AEO Platforms": {
+          "count": 2,
+          "mean": 78
+        }
+      }
+    },
+    "manufacturing": {
+      "name": "Manufacturing",
+      "count": 1,
+      "mean": 90,
+      "median": 90,
+      "p25": 90,
+      "p75": 90,
+      "categories": {
+        "Sports & Electronic Scoreboards": {
+          "count": 1,
+          "mean": 90
+        }
+      }
+    },
+    "finance-payments": {
+      "name": "Finance Payments",
+      "count": 1522,
+      "mean": 35,
+      "median": 34,
+      "p25": 23,
+      "p75": 47,
+      "categories": {
+        "Corporate Finance Platforms": {
+          "count": 1473,
+          "mean": 35
+        },
+        "Payment Processing": {
+          "count": 46,
+          "mean": 38
+        },
+        "Lending & Banking": {
+          "count": 3,
+          "mean": 28
+        }
+      }
+    },
+    "real-estate": {
+      "name": "Real Estate",
+      "count": 137,
+      "mean": 38,
+      "median": 38,
+      "p25": 24,
+      "p75": 52,
+      "categories": {
+        "Property Technology": {
+          "count": 137,
+          "mean": 38
+        }
+      }
+    },
+    "healthcare": {
+      "name": "Healthcare",
+      "count": 937,
+      "mean": 35,
+      "median": 35,
+      "p25": 23,
+      "p75": 48,
+      "categories": {
+        "Healthcare Technology": {
+          "count": 855,
+          "mean": 35
+        },
+        "Assisted Living": {
+          "count": 61,
+          "mean": 41
+        },
+        "Medicare & Insurance": {
+          "count": 11,
+          "mean": 35
+        },
+        "Nursing Homes": {
+          "count": 1,
+          "mean": 58
+        },
+        "Home Health Care": {
+          "count": 7,
+          "mean": 30
+        },
+        "Senior Community Centers": {
+          "count": 2,
+          "mean": 29
+        }
+      }
+    },
+    "customer-support": {
+      "name": "Customer Support",
+      "count": 81,
+      "mean": 36,
+      "median": 32,
+      "p25": 23,
+      "p75": 52,
+      "categories": {
+        "Customer Support Outsourcing": {
+          "count": 1,
+          "mean": 82
+        },
+        "Live Chat Software": {
+          "count": 34,
+          "mean": 35
+        },
+        "Support Platforms": {
+          "count": 39,
+          "mean": 35
+        },
+        "BPO & Outsourcing": {
+          "count": 7,
+          "mean": 40
+        }
+      }
+    },
+    "hr-workforce": {
+      "name": "Hr Workforce",
+      "count": 400,
+      "mean": 39,
+      "median": 37,
+      "p25": 27,
+      "p75": 52,
+      "categories": {
+        "HR & Payroll Platforms": {
+          "count": 400,
+          "mean": 39
+        }
+      }
+    },
+    "developer-tools": {
+      "name": "Developer Tools",
+      "count": 2926,
+      "mean": 35,
+      "median": 33,
+      "p25": 22,
+      "p75": 47,
+      "categories": {
+        "AI & ML Platforms": {
+          "count": 1365,
+          "mean": 34
+        },
+        "Developer Platforms": {
+          "count": 804,
+          "mean": 33
+        },
+        "Security & Compliance": {
+          "count": 235,
+          "mean": 39
+        },
+        "Cloud Infrastructure": {
+          "count": 287,
+          "mean": 36
+        },
+        "Robotics & Hardware": {
+          "count": 235,
+          "mean": 35
+        }
+      }
+    },
+    "education": {
+      "name": "Education",
+      "count": 289,
+      "mean": 37,
+      "median": 38,
+      "p25": 26,
+      "p75": 49,
+      "categories": {
+        "Education Platforms": {
+          "count": 289,
+          "mean": 37
+        }
+      }
+    },
+    "insurance": {
+      "name": "Insurance",
+      "count": 146,
+      "mean": 38,
+      "median": 37,
+      "p25": 25,
+      "p75": 52,
+      "categories": {
+        "Insurance Technology": {
+          "count": 146,
+          "mean": 38
+        }
+      }
+    },
+    "website-builders": {
+      "name": "Website Builders",
+      "count": 23,
+      "mean": 34,
+      "median": 30,
+      "p25": 22,
+      "p75": 45,
+      "categories": {
+        "Website Platforms": {
+          "count": 23,
+          "mean": 34
+        }
+      }
+    },
+    "saas-productivity": {
+      "name": "Saas Productivity",
+      "count": 850,
+      "mean": 35,
+      "median": 34,
+      "p25": 22,
+      "p75": 48,
+      "categories": {
+        "Project Management": {
+          "count": 346,
+          "mean": 33
+        },
+        "Analytics": {
+          "count": 373,
+          "mean": 38
+        },
+        "Scheduling & Booking": {
+          "count": 37,
+          "mean": 32
+        },
+        "Knowledge Management": {
+          "count": 94,
+          "mean": 33
+        }
+      }
+    },
+    "sosv-2016": {
+      "name": "Sosv 2016",
+      "count": 58,
+      "mean": 40,
+      "median": 39,
+      "p25": 32,
+      "p75": 50,
+      "categories": {
+        "sosv-2016": {
+          "count": 58,
+          "mean": 40
+        }
+      }
+    },
+    "logistics": {
+      "name": "Logistics",
+      "count": 206,
+      "mean": 38,
+      "median": 37,
+      "p25": 25,
+      "p75": 51,
+      "categories": {
+        "Logistics Platforms": {
+          "count": 206,
+          "mean": 38
+        }
+      }
+    },
+    "crm-sales": {
+      "name": "Crm Sales",
+      "count": 119,
+      "mean": 38,
+      "median": 36,
+      "p25": 24,
+      "p75": 51,
+      "categories": {
+        "CRM Platforms": {
+          "count": 119,
+          "mean": 38
+        }
+      }
+    },
+    "energy-cleantech": {
+      "name": "Energy Cleantech",
+      "count": 689,
+      "mean": 37,
+      "median": 38,
+      "p25": 25,
+      "p75": 49,
+      "categories": {
+        "Energy Technology": {
+          "count": 689,
+          "mean": 37
+        }
+      }
+    },
+    "ecommerce": {
+      "name": "Ecommerce",
+      "count": 549,
+      "mean": 33,
+      "median": 32,
+      "p25": 21,
+      "p75": 46,
+      "categories": {
+        "E-commerce Platforms": {
+          "count": 549,
+          "mean": 33
+        }
+      }
+    },
+    "marketing-automation": {
+      "name": "Marketing Automation",
+      "count": 201,
+      "mean": 38,
+      "median": 40,
+      "p25": 22,
+      "p75": 52,
+      "categories": {
+        "Email & Marketing Platforms": {
+          "count": 201,
+          "mean": 38
+        }
+      }
+    },
+    "sosv-2011": {
+      "name": "Sosv 2011",
+      "count": 6,
+      "mean": 46,
+      "median": 43,
+      "p25": 36,
+      "p75": 50,
+      "categories": {
+        "sosv-2011": {
+          "count": 6,
+          "mean": 46
+        }
+      }
+    },
+    "sosv-2020.0": {
+      "name": "Sosv 2020.0",
+      "count": 3,
+      "mean": 50,
+      "median": 47,
+      "p25": 40,
+      "p75": 59,
+      "categories": {
+        "sosv-2020.0": {
+          "count": 3,
+          "mean": 50
+        }
+      }
+    },
+    "techstars-2020": {
+      "name": "Techstars 2020",
+      "count": 44,
+      "mean": 39,
+      "median": 39,
+      "p25": 29,
+      "p75": 53,
+      "categories": {
+        "techstars-2020": {
+          "count": 44,
+          "mean": 39
+        }
+      }
+    },
+    "legal-services": {
+      "name": "Legal Services",
+      "count": 43,
+      "mean": 39,
+      "median": 39,
+      "p25": 29,
+      "p75": 52,
+      "categories": {
+        "Legal Technology": {
+          "count": 43,
+          "mean": 39
+        }
+      }
+    },
+    "food-agriculture": {
+      "name": "Food Agriculture",
+      "count": 228,
+      "mean": 36,
+      "median": 37,
+      "p25": 25,
+      "p75": 48,
+      "categories": {
+        "AgriTech": {
+          "count": 228,
+          "mean": 36
+        }
+      }
+    },
+    "techstars-2011": {
+      "name": "Techstars 2011",
+      "count": 4,
+      "mean": 38,
+      "median": 41,
+      "p25": 27,
+      "p75": 53,
+      "categories": {
+        "techstars-2011": {
+          "count": 4,
+          "mean": 38
+        }
+      }
+    },
+    "sosv-2017": {
+      "name": "Sosv 2017",
+      "count": 52,
+      "mean": 37,
+      "median": 37,
+      "p25": 26,
+      "p75": 49,
+      "categories": {
+        "sosv-2017": {
+          "count": 52,
+          "mean": 37
+        }
+      }
+    },
+    "techstars-2019": {
+      "name": "Techstars 2019",
+      "count": 29,
+      "mean": 36,
+      "median": 34,
+      "p25": 23,
+      "p75": 54,
+      "categories": {
+        "techstars-2019": {
+          "count": 29,
+          "mean": 36
+        }
+      }
+    },
+    "design-collaboration": {
+      "name": "Design Collaboration",
+      "count": 305,
+      "mean": 33,
+      "median": 33,
+      "p25": 21,
+      "p75": 46,
+      "categories": {
+        "Design Tools": {
+          "count": 305,
+          "mean": 33
+        }
+      }
+    },
+    "techstars-2014": {
+      "name": "Techstars 2014",
+      "count": 5,
+      "mean": 46,
+      "median": 54,
+      "p25": 31,
+      "p75": 63,
+      "categories": {
+        "techstars-2014": {
+          "count": 5,
+          "mean": 46
+        }
+      }
+    },
+    "sosv-2014": {
+      "name": "Sosv 2014",
+      "count": 24,
+      "mean": 41,
+      "median": 42,
+      "p25": 28,
+      "p75": 52,
+      "categories": {
+        "sosv-2014": {
+          "count": 24,
+          "mean": 41
+        }
+      }
+    },
+    "sosv-2012": {
+      "name": "Sosv 2012",
+      "count": 7,
+      "mean": 34,
+      "median": 35,
+      "p25": 25,
+      "p75": 39,
+      "categories": {
+        "sosv-2012": {
+          "count": 7,
+          "mean": 34
+        }
+      }
+    },
+    "team-communication": {
+      "name": "Team Communication",
+      "count": 125,
+      "mean": 29,
+      "median": 27,
+      "p25": 16,
+      "p75": 41,
+      "categories": {
+        "Messaging & Video Platforms": {
+          "count": 125,
+          "mean": 29
+        }
+      }
+    },
+    "sosv-2010": {
+      "name": "Sosv 2010",
+      "count": 4,
+      "mean": 51,
+      "median": 52,
+      "p25": 46,
+      "p75": 56,
+      "categories": {
+        "sosv-2010": {
+          "count": 4,
+          "mean": 51
+        }
+      }
+    },
+    "automotive": {
+      "name": "Automotive",
+      "count": 19,
+      "mean": 35,
+      "median": 29,
+      "p25": 21,
+      "p75": 52,
+      "categories": {
+        "Automotive Technology": {
+          "count": 19,
+          "mean": 35
+        }
+      }
+    },
+    "gaming-entertainment": {
+      "name": "Gaming Entertainment",
+      "count": 139,
+      "mean": 28,
+      "median": 26,
+      "p25": 16,
+      "p75": 38,
+      "categories": {
+        "Gaming Platforms": {
+          "count": 139,
+          "mean": 28
+        }
+      }
+    },
+    "sosv-2020": {
+      "name": "Sosv 2020",
+      "count": 48,
+      "mean": 34,
+      "median": 36,
+      "p25": 22,
+      "p75": 45,
+      "categories": {
+        "sosv-2020": {
+          "count": 48,
+          "mean": 34
+        }
+      }
+    },
+    "music-retail": {
+      "name": "Music Retail",
+      "count": 21,
+      "mean": 31,
+      "median": 31,
+      "p25": 13,
+      "p75": 47,
+      "categories": {
+        "Record Stores & Labels": {
+          "count": 21,
+          "mean": 31
+        }
+      }
+    },
+    "techstars-2013": {
+      "name": "Techstars 2013",
+      "count": 5,
+      "mean": 25,
+      "median": 17,
+      "p25": 9,
+      "p75": 34,
+      "categories": {
+        "techstars-2013": {
+          "count": 5,
+          "mean": 25
+        }
+      }
+    },
+    "techstars-2018": {
+      "name": "Techstars 2018",
+      "count": 15,
+      "mean": 29,
+      "median": 30,
+      "p25": 17,
+      "p75": 42,
+      "categories": {
+        "techstars-2018": {
+          "count": 15,
+          "mean": 29
+        }
+      }
+    },
+    "techstars-2017": {
+      "name": "Techstars 2017",
+      "count": 13,
+      "mean": 45,
+      "median": 45,
+      "p25": 37,
+      "p75": 56,
+      "categories": {
+        "techstars-2017": {
+          "count": 13,
+          "mean": 45
+        }
+      }
+    },
+    "sosv-2015": {
+      "name": "Sosv 2015",
+      "count": 32,
+      "mean": 41,
+      "median": 42,
+      "p25": 32,
+      "p75": 54,
+      "categories": {
+        "sosv-2015": {
+          "count": 32,
+          "mean": 41
+        }
+      }
+    },
+    "sosv-2007": {
+      "name": "Sosv 2007",
+      "count": 2,
+      "mean": 61,
+      "median": 61,
+      "p25": 60,
+      "p75": 61,
+      "categories": {
+        "sosv-2007": {
+          "count": 2,
+          "mean": 61
+        }
+      }
+    },
+    "government": {
+      "name": "Government",
+      "count": 14,
+      "mean": 36,
+      "median": 39,
+      "p25": 25,
+      "p75": 47,
+      "categories": {
+        "Government Technology": {
+          "count": 14,
+          "mean": 36
+        }
+      }
+    },
+    "sosv-2019": {
+      "name": "Sosv 2019",
+      "count": 42,
+      "mean": 35,
+      "median": 38,
+      "p25": 21,
+      "p75": 46,
+      "categories": {
+        "sosv-2019": {
+          "count": 42,
+          "mean": 35
+        }
+      }
+    },
+    "techstars-2015": {
+      "name": "Techstars 2015",
+      "count": 4,
+      "mean": 52,
+      "median": 55,
+      "p25": 48,
+      "p75": 59,
+      "categories": {
+        "techstars-2015": {
+          "count": 4,
+          "mean": 52
+        }
+      }
+    },
+    "sosv-2019.0": {
+      "name": "Sosv 2019.0",
+      "count": 1,
+      "mean": 59,
+      "median": 59,
+      "p25": 59,
+      "p75": 59,
+      "categories": {
+        "sosv-2019.0": {
+          "count": 1,
+          "mean": 59
+        }
+      }
+    },
+    "sosv-2018": {
+      "name": "Sosv 2018",
+      "count": 51,
+      "mean": 36,
+      "median": 40,
+      "p25": 26,
+      "p75": 49,
+      "categories": {
+        "sosv-2018": {
+          "count": 51,
+          "mean": 36
+        }
+      }
+    },
+    "techstars-2016": {
+      "name": "Techstars 2016",
+      "count": 11,
+      "mean": 33,
+      "median": 36,
+      "p25": 20,
+      "p75": 47,
+      "categories": {
+        "techstars-2016": {
+          "count": 11,
+          "mean": 33
+        }
+      }
+    },
+    "sosv-2009": {
+      "name": "Sosv 2009",
+      "count": 1,
+      "mean": 56,
+      "median": 56,
+      "p25": 56,
+      "p75": 56,
+      "categories": {
+        "sosv-2009": {
+          "count": 1,
+          "mean": 56
+        }
+      }
+    },
+    "content-seo": {
+      "name": "Content Seo",
+      "count": 12,
+      "mean": 34,
+      "median": 36,
+      "p25": 24,
+      "p75": 50,
+      "categories": {
+        "SEO & Content Platforms": {
+          "count": 12,
+          "mean": 34
+        }
+      }
+    },
+    "sosv-2013": {
+      "name": "Sosv 2013",
+      "count": 18,
+      "mean": 34,
+      "median": 33,
+      "p25": 25,
+      "p75": 48,
+      "categories": {
+        "sosv-2013": {
+          "count": 18,
+          "mean": 34
+        }
+      }
+    },
+    "sosv-2002": {
+      "name": "Sosv 2002",
+      "count": 1,
+      "mean": 53,
+      "median": 53,
+      "p25": 53,
+      "p75": 53,
+      "categories": {
+        "sosv-2002": {
+          "count": 1,
+          "mean": 53
+        }
+      }
+    },
+    "sosv-2016.0": {
+      "name": "Sosv 2016.0",
+      "count": 1,
+      "mean": 52,
+      "median": 52,
+      "p25": 52,
+      "p75": 52,
+      "categories": {
+        "sosv-2016.0": {
+          "count": 1,
+          "mean": 52
+        }
+      }
+    },
+    "sosv-2004": {
+      "name": "Sosv 2004",
+      "count": 1,
+      "mean": 50,
+      "median": 50,
+      "p25": 50,
+      "p75": 50,
+      "categories": {
+        "sosv-2004": {
+          "count": 1,
+          "mean": 50
+        }
+      }
+    },
+    "techstars-2012": {
+      "name": "Techstars 2012",
+      "count": 5,
+      "mean": 25,
+      "median": 24,
+      "p25": 20,
+      "p75": 31,
+      "categories": {
+        "techstars-2012": {
+          "count": 5,
+          "mean": 25
+        }
+      }
+    },
+    "sosv-2018.0": {
+      "name": "Sosv 2018.0",
+      "count": 1,
+      "mean": 45,
+      "median": 45,
+      "p25": 45,
+      "p75": 45,
+      "categories": {
+        "sosv-2018.0": {
+          "count": 1,
+          "mean": 45
+        }
+      }
+    },
+    "sosv-2013.0": {
+      "name": "Sosv 2013.0",
+      "count": 2,
+      "mean": 36,
+      "median": 36,
+      "p25": 32,
+      "p75": 41,
+      "categories": {
+        "sosv-2013.0": {
+          "count": 2,
+          "mean": 36
+        }
+      }
+    },
+    "sosv-2017.0": {
+      "name": "Sosv 2017.0",
+      "count": 3,
+      "mean": 27,
+      "median": 24,
+      "p25": 20,
+      "p75": 34,
+      "categories": {
+        "sosv-2017.0": {
+          "count": 3,
+          "mean": 27
+        }
+      }
+    },
+    "sosv-2008": {
+      "name": "Sosv 2008",
+      "count": 1,
+      "mean": 42,
+      "median": 42,
+      "p25": 42,
+      "p75": 42,
+      "categories": {
+        "sosv-2008": {
+          "count": 1,
+          "mean": 42
+        }
+      }
+    },
+    "sosv-2006": {
+      "name": "Sosv 2006",
+      "count": 1,
+      "mean": 38,
+      "median": 38,
+      "p25": 38,
+      "p75": 38,
+      "categories": {
+        "sosv-2006": {
+          "count": 1,
+          "mean": 38
+        }
+      }
+    },
+    "sosv-2005": {
+      "name": "Sosv 2005",
+      "count": 1,
+      "mean": 38,
+      "median": 38,
+      "p25": 38,
+      "p75": 38,
+      "categories": {
+        "sosv-2005": {
+          "count": 1,
+          "mean": 38
+        }
+      }
+    },
+    "sosv-2018.11": {
+      "name": "Sosv 2018.11",
+      "count": 1,
+      "mean": 33,
+      "median": 33,
+      "p25": 33,
+      "p75": 33,
+      "categories": {
+        "sosv-2018.11": {
+          "count": 1,
+          "mean": 33
+        }
+      }
+    },
+    "techstars-2010": {
+      "name": "Techstars 2010",
+      "count": 1,
+      "mean": 33,
+      "median": 33,
+      "p25": 33,
+      "p75": 33,
+      "categories": {
+        "techstars-2010": {
+          "count": 1,
+          "mean": 33
+        }
+      }
+    },
+    "sosv-1990": {
+      "name": "Sosv 1990",
+      "count": 1,
+      "mean": 29,
+      "median": 29,
+      "p25": 29,
+      "p75": 29,
+      "categories": {
+        "sosv-1990": {
+          "count": 1,
+          "mean": 29
+        }
+      }
+    },
+    "sosv-1995": {
+      "name": "Sosv 1995",
+      "count": 1,
+      "mean": 22,
+      "median": 22,
+      "p25": 22,
+      "p75": 22,
+      "categories": {
+        "sosv-1995": {
+          "count": 1,
+          "mean": 22
+        }
+      }
+    },
+    "sosv-2021.0": {
+      "name": "Sosv 2021.0",
+      "count": 1,
+      "mean": 10,
+      "median": 10,
+      "p25": 10,
+      "p75": 10,
+      "categories": {
+        "sosv-2021.0": {
+          "count": 1,
+          "mean": 10
+        }
+      }
+    },
+    "sosv-1996": {
+      "name": "Sosv 1996",
+      "count": 1,
+      "mean": 8,
+      "median": 8,
+      "p25": 8,
+      "p75": 8,
+      "categories": {
+        "sosv-1996": {
+          "count": 1,
+          "mean": 8
+        }
+      }
+    }
+  }
+}

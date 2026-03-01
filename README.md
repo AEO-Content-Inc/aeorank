@@ -21,7 +21,9 @@ npx aeorank example.com
 ```bash
 npx aeorank example.com --json          # JSON output
 npx aeorank example.com --summary       # Human-readable scorecard
+npx aeorank example.com --html          # Standalone HTML report
 npx aeorank example.com --ci --threshold 80  # CI gate
+npx aeorank site-a.com site-b.com       # Side-by-side comparison
 ```
 
 ### Programmatic
@@ -69,10 +71,12 @@ AEORank evaluates 23 criteria across 4 categories that determine how AI engines 
 
 ```
 aeorank <domain> [options]
+aeorank <domain-a> <domain-b> [options]   # comparison mode
 
 Options:
   --json              Output raw JSON to stdout
   --summary           Print human-readable scorecard
+  --html              Generate standalone HTML report file
   --ci                CI mode: JSON + exit 1 if score < threshold
   --threshold <N>     Score threshold for --ci (default: 70)
   --no-headless       Skip Puppeteer SPA rendering
@@ -168,6 +172,74 @@ Score interpretation:
 - **56-70** - Moderate readiness, significant gaps
 - **41-55** - Below average, multiple areas need attention
 - **0-40** - Critical gaps, largely invisible to AI engines
+
+## HTML Reports
+
+Generate a self-contained HTML report with score visualization, scorecard grid, and opportunities table:
+
+```bash
+npx aeorank example.com --html
+# -> aeorank-example-com.html
+
+npx aeorank site-a.com site-b.com --html
+# -> aeorank-site-a-com-vs-site-b-com.html
+```
+
+Reports include inline CSS and SVG - no external dependencies. Open directly in any browser or share as a file.
+
+Programmatic usage:
+
+```ts
+import { audit, generateHtmlReport } from 'aeorank';
+
+const result = await audit('example.com');
+const html = generateHtmlReport(result);
+```
+
+## Comparison Mode
+
+Compare two sites side-by-side. Both audits run in parallel:
+
+```bash
+npx aeorank site-a.com site-b.com
+npx aeorank site-a.com site-b.com --json
+npx aeorank site-a.com site-b.com --html
+```
+
+Programmatic usage:
+
+```ts
+import { compare } from 'aeorank';
+
+const result = await compare('site-a.com', 'site-b.com');
+console.log(result.comparison.scoreDelta);       // Overall score difference
+console.log(result.comparison.siteAAdvantages);   // Criteria where A leads
+console.log(result.comparison.siteBAdvantages);   // Criteria where B leads
+console.log(result.comparison.tied);              // Criteria with equal scores
+```
+
+## Benchmark Dataset
+
+The `data/` directory contains open benchmark data from 500+ audited domains:
+
+| File | Description |
+|------|-------------|
+| [`data/benchmark.json`](data/benchmark.json) | All domains with per-criterion scores, sector/category |
+| [`data/yc.json`](data/yc.json) | YC startups with company metadata |
+| [`data/sectors.json`](data/sectors.json) | Pre-computed sector statistics |
+
+Use the dataset for research, benchmarking, or building on top of AEORank:
+
+```ts
+import benchmark from './data/benchmark.json' assert { type: 'json' };
+
+// Find domains scoring above 80
+const topDomains = benchmark.entries.filter(e => e.score >= 80);
+
+// Get sector averages
+import sectors from './data/sectors.json' assert { type: 'json' };
+console.log(sectors.sectors.healthcare.mean); // Average score for healthcare
+```
 
 ## Contributing
 
