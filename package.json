@@ -1,6 +1,6 @@
 {
   "name": "aeorank",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "AI Engine Optimization audit - score any website across 23 criteria for AI visibility",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -23,6 +23,7 @@
   },
   "files": [
     "dist",
+    "data",
     "LICENSE",
     "README.md"
   ],
@@ -49,7 +50,9 @@
     "ai-visibility",
     "schema-markup",
     "structured-data",
-    "llms-txt"
+    "llms-txt",
+    "github-actions",
+    "benchmark"
   ],
   "author": "AEO Content, Inc.",
   "license": "MIT",
