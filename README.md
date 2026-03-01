@@ -220,13 +220,13 @@ console.log(result.comparison.tied);              // Criteria with equal scores
 
 ## Benchmark Dataset
 
-The `data/` directory contains the largest open dataset of AI visibility scores - **11,068 domains** scored across 23 criteria, including **4,313 Y Combinator startups** across 48 batches (W06-W26):
+The `data/` directory contains the largest open dataset of AI visibility scores - **13,619 domains** scored across 23 criteria, including **4,328 Y Combinator startups** across 48 batches (W06-W26):
 
 | File | Contents |
 |------|----------|
-| [`data/benchmark.json`](data/benchmark.json) | **11,068 domains** with per-criterion scores and sector/category |
-| [`data/yc.json`](data/yc.json) | **4,313 Y Combinator startups** with company name, one-liner, founders, industry tags |
-| [`data/sectors.json`](data/sectors.json) | **66 sectors** with pre-computed statistics (mean, median, p25, p75) |
+| [`data/benchmark.json`](data/benchmark.json) | **13,619 domains** with per-criterion scores and sector/category |
+| [`data/yc.json`](data/yc.json) | **4,328 Y Combinator startups** with company name, one-liner, founders, industry tags |
+| [`data/sectors.json`](data/sectors.json) | **129 sectors** with pre-computed statistics (mean, median, p25, p75) |
 
 Use the dataset for research, benchmarking, or building on top of AEORank:
 
