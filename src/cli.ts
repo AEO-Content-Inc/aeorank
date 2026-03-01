@@ -24,7 +24,7 @@ import { compare } from './compare.js';
 import type { ComparisonResult } from './compare.js';
 import { generateHtmlReport, generateComparisonHtmlReport } from './html-report.js';
 
-const VERSION = '1.2.1';
+const VERSION = '1.2.2';
 
 interface CliArgs {
   domain: string;
